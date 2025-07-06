@@ -12,8 +12,8 @@ export default function About() {
         </h1>
 
         <p className="text-lg text-gray-300">
-          At <span className="text-blue-400 font-semibold">MicroLinks</span>, we believe long URLs shouldn't stand in your way.
-          Whether you're sharing a project, marketing a product, or organizing your links, our platform helps you create clean,
+          At <span className="text-blue-400 font-semibold">MicroLinks</span>, we believe long URLs shouldn&apos;t stand in your way.
+          Whether you&apos;re sharing a project, marketing a product, or organizing your links, our platform helps you create clean,
           short, and memorable links that just work.
         </p>
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const page = () => {
+const Page = () => {
     const [url, seturl] = useState("")
     const [shorturl, setshorturl] = useState("")
     const [generated, setgenerated] = useState("")
@@ -58,7 +58,7 @@ const page = () => {
                     <div className="flex flex-col justify-center items-center gap-3">
                         <input className="md:px-10 py-3 rounded-lg text-white outline-none border-2 border-white md:w-150 w-[95vw] m-1 px-3" value={url} onChange={(e) => seturl(e.target.value)} type="text" placeholder="Enter URL: " />
                         <input className="md:px-10 py-3 rounded-lg text-white outline-none border-2 border-white md:w-150 w-[95vw] m-1 px-3" value={shorturl} onChange={(e) => setshorturl(e.target.value)} type="text" placeholder="Enter Short URL: " />
-                        <button className="bg-green-600 border-none font-bold text-white font-bold px-5 py-3 rounded-full" onClick={generate}>Generate</button>
+                        <button className="bg-green-600 border-none font-bold text-white px-5 py-3 rounded-full" onClick={generate}>Generate</button>
                     </div>
                     <div className="md:m-10 mt-5 md:text-2xl bg-white md:p-3 py-1 md:px-15 px-4 md:w-fit w-[95vw] flex md:flex-row flex-col justify-around container mx-auto items-center gap-3 rounded-lg overflow-y-hidden">
                         <span className="font-bold">Your Short Link: </span>
@@ -73,4 +73,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
