@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🔗 MicroLinks - URL Shortener
 
-## Getting Started
+**MicroLinks** is a simple, modern, and responsive URL shortener built with:
 
-First, run the development server:
+- ⚡️ [Next.js](https://nextjs.org/) — for SSR and API routes
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) — for fast and customizable styling
+- 🔐 [Clerk](https://clerk.dev/) — for authentication (Sign In/Up, user management)
+- ☁️ [MongoDB](https://www.mongodb.com/) — for storing original and shortened URLs
+- 🌐 Responsive UI — works seamlessly across mobile, tablet, and desktop devices
+
+---
+
+![Micro Links](https://github.com/abdullahxtech/micro-links/blob/965e2eda5c2f0ea2cbdfb1bb355745c6fc87aa2c/public/microlinks-home.png)
+
+---
+
+## ✨ Features
+
+- 🔗 Shorten any long URL into a custom, memorable link
+- 👤 User authentication using Clerk (Sign In / Sign Up / User Profile)
+- 📋 Copy short URLs directly to clipboard
+- ⚡ Instant generation via custom short path
+- 🌓 Clean dark-themed UI
+- ✅ Fully responsive and mobile-friendly
+
+---
+
+## 📸 Demo
+
+> **Live Demo:** _coming soon on Vercel_
+
+---
+
+## 🧑‍💻 Tech Stack
+
+| Technology   | Usage                      |
+|--------------|----------------------------|
+| Next.js      | App structure & API routes |
+| Tailwind CSS | Styling & layout           |
+| Clerk        | User authentication        |
+| MongoDB      | Database for storing links |
+| React Icons  | Icons used across the app  |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/your-username/microlinks.git
+cd microlinks
