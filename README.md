@@ -27,7 +27,7 @@
 
 ## 📸 Demo
 
-> **Live Demo:** _coming soon on Vercel_
+> **Micro Links is Live Now: ** ![Micro Links](https://micro-links.vercel.app/)
 
 ---
 
