@@ -52,25 +52,28 @@ const Page = () => {
 
 
     return (
-        <div>
-            <main className="flex justify-center items-center h-[70vh] w-full text-xl">
-                <section className="flex flex-col justify-center items-center">
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <input className="md:px-10 py-3 rounded-lg text-white outline-none border-2 border-white md:w-150 w-[95vw] m-1 px-3" value={url} onChange={(e) => seturl(e.target.value)} type="text" placeholder="Enter URL: " />
-                        <input className="md:px-10 py-3 rounded-lg text-white outline-none border-2 border-white md:w-150 w-[95vw] m-1 px-3" value={shorturl} onChange={(e) => setshorturl(e.target.value)} type="text" placeholder="Enter Short URL: " />
-                        <button className="bg-green-600 border-none font-bold text-white px-5 py-3 rounded-full" onClick={generate}>Generate</button>
-                    </div>
-                    <div className="md:m-10 mt-5 md:text-2xl bg-white md:p-3 py-1 md:px-15 px-4 md:w-fit w-[95vw] flex md:flex-row flex-col justify-around container mx-auto items-center gap-3 rounded-lg overflow-y-hidden">
-                        <span className="font-bold">Your Short Link: </span>
-                        <code className="flex justify-center items-center gap-3 text-sky-600 hover:font-bold">
-                            {generated ? <Link target="_blank" className="underline" href={generated}>{generated}</Link> : <span>...</span>}
-                            <Image onClick={copyClipboard} alt="copy short url" src="/copy.gif" width={30} height={30} />
-                        </code>
-                    </div>
-                </section>
-            </main>
-        </div>
+        <section className="flex justify-center items-center h-[70vh] w-full text-xl">
+            <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center items-center gap-3">
+                    <input className="md:px-10 py-3 rounded-lg text-white outline-none border-2 border-white md:w-150 w-[95vw] m-1 px-3" value={url} onChange={(e) => seturl(e.target.value)} type="text" placeholder="Enter URL: " />
+                    <input className="md:px-10 py-3 rounded-lg text-white outline-none border-2 border-white md:w-150 w-[95vw] m-1 px-3" value={shorturl} onChange={(e) => setshorturl(e.target.value)} type="text" placeholder="Enter Short URL: " />
+                    <button className="bg-green-600 border-none font-bold text-white px-5 py-3 rounded-full" onClick={generate}>Generate</button>
+                </div>
+                <div className="md:m-10 mt-5 md:text-2xl bg-white md:p-3 py-1 md:px-15 px-4 md:w-fit w-[95vw] flex md:flex-row flex-col justify-around container mx-auto items-center gap-3 rounded-lg overflow-y-hidden">
+                    <span className="font-bold">Your Short Link: </span>
+                    <code className="flex justify-center items-center gap-3 text-sky-600 hover:font-bold">
+                        {generated ? <Link target="_blank" className="underline" href={generated}>{generated}</Link> : <span>...</span>}
+                        <Image onClick={copyClipboard} alt="copy short url" src="/copy.gif" width={30} height={30} />
+                    </code>
+                </div>
+            </div>
+        </section>
     )
 }
 
 export default Page
+
+export const metadata = {
+  title: "MicroLinks - Short URL Generator",
+  description: "MicroLinks create your url into short urls",
+};

@@ -28,9 +28,9 @@ export default function RootLayout({ children }) {
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <TopLoader />
           <Navbar />
-          <div className="min-h-screen w-full [background:radial-gradient(circle_at_center,_rgba(0,0,255,0.7)_0%,_rgba(0,0,0,1)_30%)]">
+          <main className="min-h-screen w-full [background:radial-gradient(circle_at_center,_rgba(0,0,255,0.7)_0%,_rgba(0,0,0,1)_30%)]">
             {children}
-          </div>
+          </main>
           <Footer/>
         </body>
       </html>

@@ -4,8 +4,8 @@ import React from "react";
 
 export default function About() {
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center px-5 text-white bg-black">
-      <section className="max-w-3xl text-center space-y-6">
+    <section className="min-h-screen flex flex-col justify-center items-center px-5 text-white bg-black">
+      <div className="max-w-3xl text-center space-y-6">
         <h1 className="text-5xl font-extrabold text-blue-500 tracking-tight">
           Welcome to <span className="text-white">Micro</span>
           <span className="text-blue-500">Links</span>
@@ -36,7 +36,7 @@ export default function About() {
             Get Started
           </Link>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
